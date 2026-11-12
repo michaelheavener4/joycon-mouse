@@ -1,0 +1,11 @@
+[Unit]
+Description=Joy-Con motion mouse
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/joycon-mouse
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
